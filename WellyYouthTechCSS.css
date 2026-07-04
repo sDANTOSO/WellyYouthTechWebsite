@@ -1,0 +1,108 @@
+ body {
+  background-color: rgb(34, 1, 27);
+}
+
+h1 {
+  color: rgb(78, 5, 5);
+  text-align: center;
+  
+}
+
+
+@font-face {
+  font-family: "MyAmazingFont";
+  src: url("SantosoFont-Regular.otf") format("opentype");
+}
+
+.my-font{
+  font-family: "MyAmazingFont",serif;
+  font-size: 30px;
+}
+
+.myheadingfont{
+  font-family: "MyAmazingFont",serif;
+  font-size: 50px;
+   color: #012966;
+}
+
+p {
+  color: #ae8396;
+  text-align: center;
+}
+
+div {
+    width: 50%;
+    margin: 0 auto; /* centers the noticeboard horizontally */
+  background-color: #906CD7;
+  border: 2px solid rgb(78, 5, 5);
+  width: 900px;
+  padding: 04px;
+  
+  justify-content: center;
+}
+
+.headingbox {
+    width: 50%;
+    margin: 0 auto; /* centers the noticeboard horizontally */
+  background: #5E88D0;
+  border: 10px solid #D563A4;
+  height: 100px;
+  width: 900px;
+  justify-content: center;
+  /* padding: 10px; */
+  /* margin: 20px; */
+}
+
+.box-alt {
+width: 50%;
+margin: 0 auto; /* centers the noticeboard horizontally */
+ background: #005B83;
+  border: 10px solid #6B364D;
+  text-align: center;
+  height: 225px;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.box-alt2 {
+width: 50%;
+margin: 0 auto; /* centers the noticeboard horizontally */
+  background: #005B83;
+  border: 10px solid #6B364D;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.text-image-row2 {
+   
+  display: flex; /* makes the container a flexbox which allows items to be placed side by side */
+  align-items: center; /* vertically centers the items within the container */
+  gap: 20px;
+  flex-wrap: wrap; /* allows items to wrap to the next line if they don't fit in one row really should be called flex-drop */
+ 
+}
+
+.text-image-row {
+    background: #906CD7;
+     width: 50%;
+    margin: 0 auto;
+  display: flex; /* makes the container a flexbox which allows items to be placed side by side */
+  align-items: center; /* vertically centers the items within the container */
+  gap: 20px;
+  flex-wrap: wrap; /* allows items to wrap to the next line if they don't fit in one row really should be called flex-drop */
+  width: 730px;
+
+}
+
+.right-image {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0;
+}
