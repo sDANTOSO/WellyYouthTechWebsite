@@ -1,5 +1,5 @@
  body {
-  background-color: rgb(34, 1, 27);
+  background-image: linear-gradient(to bottom, #D563A4, rgb(34, 1, 27));
 }
 
 h1 {
@@ -30,16 +30,27 @@ p {
   text-align: center;
 }
 
+a {
+  color: #5E88D0;
+  text-decoration: none;
+}
+
+
+Link:link {
+  color: #ae8396;
+  text-decoration: none;
+}
+
 div {
-    width: 50%;
-    margin: 0 auto; /* centers the noticeboard horizontally */
+  margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: #906CD7;
   border: 2px solid rgb(78, 5, 5);
   width: 900px;
   padding: 04px;
-  
-  justify-content: center;
+  justify-content: start; 
+  /* justify-content: center; */
 }
+
 
 .headingbox {
     width: 50%;
@@ -48,14 +59,32 @@ div {
   border: 10px solid #D563A4;
   height: 100px;
   width: 900px;
+ 
   justify-content: center;
   /* padding: 10px; */
   /* margin: 20px; */
 }
 
-.box-alt {
-width: 50%;
-margin: 0 auto; /* centers the noticeboard horizontally */
+.headingbox2 {
+   width: 98%;
+  background: #5E88D0;
+  border: 10px solid #D563A4;
+  position: sticky;
+  top: 0;
+  /* height: 100px; */
+
+
+  /* width: 900px; */
+ 
+  /* padding: 10px; */
+  /* margin: 20px; */
+}
+
+
+.box-alt {/* for the text box inside the hack club part */
+    width: 50%; 
+    margin: 0 auto; /*centers the noticeboard horizontally */
+    
  background: #005B83;
   border: 10px solid #6B364D;
   text-align: center;
@@ -63,20 +92,80 @@ margin: 0 auto; /* centers the noticeboard horizontally */
   width: 400px;
   padding: 10px;
   margin: 20px;
-  justify-content: center;
+  justify-content: center; 
 }
 
-.box-alt2 {
+.box-alt2 { /* for the notes on the board*/
+/*width: 50%;
+margin: 0 auto; /* centers the noticeboard horizontally */
+  background-image: url("Notepad.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: 0px solid rgb(78, 5, 5);
+  /*border: 10px solid #6B364D; */
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  padding: 0px;
+  margin: 30px;
+  /* justify-content: center; */
+}
+
+.box-alt3 {/* for the text box inside the calendar part */
 width: 50%;
 margin: 0 auto; /* centers the noticeboard horizontally */
   background: #005B83;
   border: 10px solid #6B364D;
   text-align: center;
-  height: 100px;
-  width: 300px;
+  height: 200px;
+  width: 240px;
   padding: 10px;
   margin: 20px;
   justify-content: center;
+}
+
+.parent{
+    width: 50%;
+    margin: 0 auto; /* centers the noticeboard horizontally */
+  display: flex;       /* Forces child boxes onto the same horizontal line */
+   flex-wrap: wrap;   /*Strongly prevents items from wrapping to a new line */
+  /* background: #005B83;
+  border: 10px solid #6B364D; */
+  text-align: center;
+  height: 1030px;
+  width: 800px;
+  padding: 10px;
+  /* margin: 20px; */
+  justify-content: center;
+}
+
+.box-alt4 {/* for the text box in the noticeboard section */
+/*width: 50%;
+margin: 0 auto; /* centers the noticeboard horizontally */
+  background: #005B83;
+  border: 10px solid #6B364D;
+  /* text-align: center; */
+  height: 100px;
+  width: 800px;
+  /* padding: 10px; */
+  /* margin: 20px; */
+  /* justify-content: center; */
+}
+
+
+.box-alt5 {
+    /* for the text box in the noticeboard section */
+    width: 50%;
+    margin: 0 auto; /* centers the noticeboard horizontally */
+    background: #005B83;
+     border: 10px solid #6B364D;
+  
+  text-align: center;
+  height: 200px;
+  width: 800px;
+  padding: 10px; */
+  /*margin: 20px; */
+  /* justify-content: center; */
 }
 
 .text-image-row2 {
@@ -89,6 +178,8 @@ margin: 0 auto; /* centers the noticeboard horizontally */
 }
 
 .text-image-row {
+    display: flex;
+    position: relative;
     background: #906CD7;
      width: 50%;
     margin: 0 auto;
@@ -96,9 +187,32 @@ margin: 0 auto; /* centers the noticeboard horizontally */
   align-items: center; /* vertically centers the items within the container */
   gap: 20px;
   flex-wrap: wrap; /* allows items to wrap to the next line if they don't fit in one row really should be called flex-drop */
-  width: 730px;
+  width: 850px;
+  justify-content: flex-start;
+  z-index: -10; /* ensures the text is above the image */
 
 }
+
+
+.childoftext-image-row {
+   position: relative; 
+    height: 260px;
+    width: 325px;
+   
+  text-align: end; /* centers the text within the child div */
+}
+
+
+.childoftext-image-row2 {
+   position: relative; 
+    height: 360px;
+    width: 480px;
+
+  text-align: flex-end; /* centers the text within the child div */
+  z-index: -10;
+}
+
+
 
 .right-image {
   display: block;
