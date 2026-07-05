@@ -1,0 +1,89 @@
+body {
+
+  
+
+
+  /* background-image: url("Noticeboard-middle.png") , url("Noticeboard-topbar.png");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: top center,top center; */
+
+  background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: cover, cover, cover;  
+  background-position: center top, left 0% bottom 1400% ,center;
+/* 50% -1300% */
+}
+
+@font-face {
+  font-family: "MyAmazingFont";
+  src: url("SantosoFont-Regular.otf") format("opentype");
+}
+
+
+p {/* this is the basic font that will run on anything*/
+  color: #ae8396;
+  text-align: center;
+}
+
+.my-font{/* this is my font on top of the basic font*/
+  font-family: "MyAmazingFont",serif;
+  font-size: 30px;
+}
+
+.myheadingfont{/* this is my heading font*/
+  font-family: "MyAmazingFont",serif;
+  font-size: 60px;
+   color: #012966;
+}
+
+/* if you want to add another font just do .____font i think */
+
+div {/* this is the box that will be applied before every box*/
+  /* this should be thought about carefully though in the class you can overwrite it with a new colour/margin etc*/
+  margin: 0 auto; /* centers the noticeboard horizontally */  
+  background-color: #906CD7;
+  border: 2px solid rgb(78, 5, 5);
+  width: 900px; /* this is the width of the box */
+  padding: 04px;/* this is the gap between the text/image and the border of the box*/
+  /* the margin is the gap between the border and the site walls */
+  /* it goes content->padding->border->margin */
+  justify-content: start; /* this is the alignment of the text/image inside the box (so start places it at the start of the box) */
+}
+
+.parent-noticeboardheadingbox{
+  position: relative;
+}
+.noticeboardheadingbox {/* this is the box where the title of the noticeboard will be placed*/
+  /* width: 50%; */ 
+  /* margin-left:auto;
+  margin-right: 0px; /* centers the noticeboard horizontally */
+  position: absolute;
+  left: 32%;
+  top: 65px;
+  background-image: url("Noticeboard-name.png");
+  border: 0px solid #D563A4; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130px;
+  width: 800px;
+ 
+  place-items: center;
+  padding: 10px;
+  /* margin: 20px; */
+}
+
+.calendarbox {
+  position: absolute;
+  left: 10%;
+  top: 240px;
+  /* transform: translateX(-50%); */
+  margin: 0 auto; /* centers the noticeboard horizontally */  
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  width: 480px;
+  height: 720px;
+  padding: 04px;
+  justify-content: start; 
+}
+

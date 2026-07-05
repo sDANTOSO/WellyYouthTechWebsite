@@ -158,14 +158,13 @@ margin: 0 auto; /* centers the noticeboard horizontally */
     width: 50%;
     margin: 0 auto; /* centers the noticeboard horizontally */
     background: #005B83;
-     border: 10px solid #6B364D;
-  
-  text-align: center;
-  height: 200px;
-  width: 800px;
-  padding: 10px; */
-  /*margin: 20px; */
-  /* justify-content: center; */
+    border: 10px solid #6B364D;
+    text-align: center;
+    height: 200px;
+    width: 800px;
+    padding: 10px;
+    /*margin: 20px; */
+    /* justify-content: center; */
 }
 
 .text-image-row2 {
