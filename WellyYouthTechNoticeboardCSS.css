@@ -183,3 +183,19 @@ margin: 0 auto; /* centers the noticeboard horizontally */
 
   
 }
+
+
+ a:link { /* this is the link style */
+  color: #3ce2f8;
+  text-decoration: underline; /* removes the underline from the link */
+ }
+
+ a:visited { /* this is the link style */
+  color: #012208;
+  text-decoration: none; /* removes the underline from the link */
+ }
+
+ a:hover { /* this is the link style */
+  color: #485f8a;
+  text-decoration: underline; /* adds an underline to the link on hover */
+}
