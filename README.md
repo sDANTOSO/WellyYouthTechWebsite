@@ -1,6 +1,8 @@
 # Wellington Youth Tech Website
 
-<img src="C:\Users\hwina\Desktop\WebDev\WellyYouthTechWebsite\Noticeboard-top.png" alt="Description" width="600" height="688">
+<img src="Noticeboard.png" alt="Description" width="720" height="400">
+
+My concept
 
 
 ## Background
@@ -9,11 +11,11 @@ My aim for this website was to make something that looked like a noticeboard for
 I was inspired by mixed media art edits to Olivia Rodrigos new album "You seem pretty sad for a girl so in love" and someones portfolio which was just a collage which I saw one time (sadly I could not find). I started with something very far off as I was just starting so I had no idea how to turn these basic concepts into an actual noticeboard. 
 It turned out ok for version 1 of the website but it was definitely not what I wanted
 
-<img src="C:\Users\hwina\Desktop\WebDev\WellyYouthTechWebsite\ScreenshotWebsite.png" alt="Description" width="600" height="688">
+<img src="ScreenshotWebsite.png" alt="Description" width="720" height="400">
 
 So I persevered and started again from scratch. I utilized the assets and learnings from v1 to create a very cool version 2
 
-<img src="C:\Users\hwina\Desktop\WebDev\WellyYouthTechWebsite\ScreenshotWebsitev2.png" alt="Description" width="600" height="688">
+<img src="ScreenshotWebsitev2.png" alt="Description" width="720" height="400">
 
 The calendar which is created from a white box background, a linked google calendar, some text, and some pixel art I made that makes it look as if it really is a calendar hanging on a noticeboard which to me is so sick. 
 
