@@ -1,49 +1,50 @@
+/* always put background in a body class */
 body {
-
-  /* background-image: url("Noticeboard-middle.png") , url("Noticeboard-topbar.png");
-  background-repeat: repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: top center,top center; */
-
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: cover, cover, cover;  
   background-position: center top, left 0% bottom 2126% ,center;
-/* 50% -1300% */
 }
 
-@font-face {
+/* FONTS */
+
+/* this is how you set a custom font (i used calligraphr to turn the font into an otf file) */
+@font-face { 
   font-family: "MyAmazingFont";
   src: url("SantosoFont-Regular.otf") format("opentype");
 }
 
-
-p {/* this is the basic font that will run on anything*/
+/* this is the basic font that will run on anything*/
+p {
   color: #ae8396;
   text-align: center;
 }
 
-.my-font{/* this is my font on top of the basic font*/
+/* this is my font on top of the basic font*/
+.my-font{
   font-family: "MyAmazingFont",serif;
   font-size: 30px;
 
 }
 
-.myheadingfont{/* this is my heading font*/
+/* this is my heading font*/
+.myheadingfont{
   font-family: "MyAmazingFont",serif;
   font-size: 60px;
   font-weight: 1000;
    color: #012966;
 }
 
-.mycalendarfont{/* this is my calendar font*/
+/* this is my calendar font*/
+.mycalendarfont{
   font-family: "MyAmazingFont",serif;
   font-size: 45px;
   font-weight: 1000;
    color: #720946;
 }
 
-.myposterfont{/* this is my poster font*/
+/* this is my poster font*/
+.myposterfont{
   font-family: "MyAmazingFont",serif;
   font-size: 30px;
   /* //font-weight: 1000; */
@@ -52,7 +53,10 @@ p {/* this is the basic font that will run on anything*/
 
 /* if you want to add another font just do .____font i think */
 
-div {/* this is the box that will be applied before every box*/
+/* CONTAINERS */
+
+/* this is the box that will be applied before every box*/
+div {
   /* this should be thought about carefully though in the class you can overwrite it with a new colour/margin etc*/
   margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: #906CD7;
@@ -64,13 +68,13 @@ div {/* this is the box that will be applied before every box*/
   justify-content: start; /* this is the alignment of the text/image inside the box (so start places it at the start of the box) */
 }
 
+/* this is the box which allows the other boxes to be placed anywhere as they now have a reference to a set position here*/
 .parent-noticeboardheadingbox{
   position: relative;
 }
-.noticeboardheadingbox {/* this is the box where the title of the noticeboard will be placed*/
-  /* width: 50%; */ 
-  /* margin-left:auto;
-  margin-right: 0px; /* centers the noticeboard horizontally */
+
+/* this is the box where the title of the noticeboard will be placed*/
+.noticeboardheadingbox {
   position: absolute;
   left: 32%;
   top: 65px;
@@ -80,17 +84,15 @@ div {/* this is the box that will be applied before every box*/
   background-size: cover;
   height: 130px;
   width: 800px;
- 
   place-items: center;
   padding: 10px;
-  /* margin: 20px; */
 }
 
+/* this is the box where the image of the calendar will be placed*/
 .calendarbox {
   position: absolute;
   left: 10%;
   top: 240px;
-  /* transform: translateX(-50%); */
   margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: #ffffff;
   border: 2px solid rgb(0, 0, 0);
@@ -100,11 +102,12 @@ div {/* this is the box that will be applied before every box*/
   justify-content: start; 
 }
 
+/* this is the box where the text for the calendar will be placed*/
 .calendartextbox{
   position: absolute;
   left: 10%;
   top: 240px;
-  /* transform: translateX(-50%); */
+  
   margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: TRANSPARENT;
   border: 0px solid rgb(0, 0, 0);
@@ -112,14 +115,13 @@ div {/* this is the box that will be applied before every box*/
   height: 720px;
   padding: 04px;
   justify-content: start; 
-
 }
 
+/* this is the box where the poster will be placed*/
 .posterbox {
   position: absolute;
   left: 50%;
   top: 240px;
-  /* transform: translateX(-50%); */
   margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: #ff7b00;
   border: 2px solid rgb(0, 0, 0);
@@ -129,6 +131,7 @@ div {/* this is the box that will be applied before every box*/
   justify-content: start; 
 }
 
+/* this is where the directions will be placed relative to the poster box */
 .childofposterbox {
    position: relative; 
     height: 260px;
@@ -136,7 +139,8 @@ div {/* this is the box that will be applied before every box*/
   /* //text-align: end; centers the text within the child div */
 }
 
-.gamedevnotepad { /* for the notes on the board*/
+/* creates the image and allows game development opportunities  to be written on it*/
+.gamedevnotepad { 
   position: absolute;
   left: 10%;
   top: 1000px;
@@ -153,7 +157,8 @@ div {/* this is the box that will be applied before every box*/
   margin: 10px;
 }
 
-.webdevnotepad { /* for the notes on the board*/
+/* creates the image and allows web development opportunities to be written on it */
+.webdevnotepad { 
   position: absolute;
   left: 35%;
   top: 1000px;
@@ -170,7 +175,7 @@ div {/* this is the box that will be applied before every box*/
   margin: 10px;
 }
 
-
+/* Box for people and their contacts */
 .aboutus{
   position: absolute;
   left: 60%;
@@ -188,16 +193,14 @@ div {/* this is the box that will be applied before every box*/
   margin: 10px;
 }
 
+/* Transparent box so that the bottom item doesnt overlap with noticeboard border and look janky
+also contains a Capybara */
 .transparentbox {
   position: absolute;
   left: 10%;
   top: 1500px;
   background-color: TRANSPARENT;
   border: 0px transparent; 
-  /* background-image: url("Notepadsheet.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover; */
   text-align: center;
   height: 300px;
   width: 225px;
@@ -205,17 +208,19 @@ div {/* this is the box that will be applied before every box*/
   margin: 10px;
 }
 
- a:link { /* this is the link style */
+/* LINK STYLES */
+
+ a:link { 
   color: #3ce2f8;
   text-decoration: underline; /* removes the underline from the link */
  }
 
- a:visited { /* this is the link style */
+ a:visited { 
   color: #012208;
   text-decoration: none; /* removes the underline from the link */
  }
 
- a:hover { /* this is the link style */
+ a:hover { 
   color: #485f8a;
   text-decoration: underline; /* adds an underline to the link on hover */
 }
