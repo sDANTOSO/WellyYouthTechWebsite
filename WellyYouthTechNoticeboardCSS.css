@@ -1,3 +1,9 @@
+/* <!-- Wellington Youth Tech Noticeboard -->
+<!-- By Santoso Winatan -->
+<!-- Date 6/07/2026 -->
+<!-- This holds how the website should be displayed, like fonts, sizes, colours, and positions  */ 
+
+
 /* always put background in a body class */
 body {
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
@@ -51,7 +57,7 @@ p {
    color: #720946;
 }
 
-/* if you want to add another font just do .____font i think */
+/* if you want to add another type of font just do .____font i think */
 
 /* CONTAINERS */
 
