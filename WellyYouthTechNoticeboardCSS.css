@@ -9,7 +9,7 @@ body {
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: cover, cover, cover;  
-  background-position: center top, left 0% bottom 2126% ,center;
+  background-position: center top, left 0% bottom 2370% ,center;
 }
 
 /* FONTS */
@@ -82,7 +82,7 @@ div {
 /* this is the box where the title of the noticeboard will be placed*/
 .noticeboardheadingbox {
   position: absolute;
-  left: 32%;
+  left: 27%;
   top: 65px;
   background-image: url("Noticeboard-name.png");
   border: 0px solid #D563A4; 
@@ -126,8 +126,8 @@ div {
 /* this is the box where the poster will be placed*/
 .posterbox {
   position: absolute;
-  left: 50%;
-  top: 240px;
+  left: 55%;
+  top: 320px;
   margin: 0 auto; /* centers the noticeboard horizontally */  
   background-color: #ff7b00;
   border: 2px solid rgb(0, 0, 0);
