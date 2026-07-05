@@ -8,7 +8,7 @@ body {
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: cover, cover, cover;  
-  background-position: center top, left 0% bottom 1500% ,center;
+  background-position: center top, left 0% bottom 1557% ,center;
 /* 50% -1300% */
 }
 
@@ -136,11 +136,11 @@ div {/* this is the box that will be applied before every box*/
   /* //text-align: end; centers the text within the child div */
 }
 
-.notepad { /* for the notes on the board*/
+.gamedevnotepad { /* for the notes on the board*/
 /*width: 50%;
 margin: 0 auto; /* centers the noticeboard horizontally */
   position: absolute;
-  left: 50%;
+  left: 10%;
   top: 1000px;
   background-color: TRANSPARENT;
   border: 0px transparent; 
@@ -156,4 +156,30 @@ margin: 0 auto; /* centers the noticeboard horizontally */
   padding: 0px;
   margin: 10px;
   /* justify-content: center; */
+
+  
+}
+
+.webdevnotepad { /* for the notes on the board*/
+/*width: 50%;
+margin: 0 auto; /* centers the noticeboard horizontally */
+  position: absolute;
+  left: 35%;
+  top: 1000px;
+  background-color: TRANSPARENT;
+  border: 0px transparent; 
+  background-image: url("Notepadsheet.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+ 
+  
+  text-align: center;
+  height: 300px;
+  width: 225px;
+  padding: 0px;
+  margin: 10px;
+  /* justify-content: center; */
+
+  
 }
