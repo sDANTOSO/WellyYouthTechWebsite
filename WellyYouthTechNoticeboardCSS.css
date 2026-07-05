@@ -8,7 +8,7 @@ body {
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: cover, cover, cover;  
-  background-position: center top, left 0% bottom 1557% ,center;
+  background-position: center top, left 0% bottom 2126% ,center;
 /* 50% -1300% */
 }
 
@@ -137,8 +137,6 @@ div {/* this is the box that will be applied before every box*/
 }
 
 .gamedevnotepad { /* for the notes on the board*/
-/*width: 50%;
-margin: 0 auto; /* centers the noticeboard horizontally */
   position: absolute;
   left: 10%;
   top: 1000px;
@@ -148,21 +146,14 @@ margin: 0 auto; /* centers the noticeboard horizontally */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
- 
-  
   text-align: center;
   height: 300px;
   width: 225px;
   padding: 0px;
   margin: 10px;
-  /* justify-content: center; */
-
-  
 }
 
 .webdevnotepad { /* for the notes on the board*/
-/*width: 50%;
-margin: 0 auto; /* centers the noticeboard horizontally */
   position: absolute;
   left: 35%;
   top: 1000px;
@@ -172,18 +163,47 @@ margin: 0 auto; /* centers the noticeboard horizontally */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
- 
-  
   text-align: center;
   height: 300px;
   width: 225px;
   padding: 0px;
   margin: 10px;
-  /* justify-content: center; */
-
-  
 }
 
+
+.aboutus{
+  position: absolute;
+  left: 60%;
+  top: 1200px;
+  /* background-color: TRANSPARENT;
+  border: 0px transparent; 
+  background-image: url("Notepadsheet.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+  text-align: center;
+  height: 300px;
+  width: 450px;
+  padding: 0px;
+  margin: 10px;
+}
+
+.transparentbox {
+  position: absolute;
+  left: 10%;
+  top: 1500px;
+  background-color: TRANSPARENT;
+  border: 0px transparent; 
+  /* background-image: url("Notepadsheet.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+  text-align: center;
+  height: 300px;
+  width: 225px;
+  padding: 0px;
+  margin: 10px;
+}
 
  a:link { /* this is the link style */
   color: #3ce2f8;
