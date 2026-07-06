@@ -144,7 +144,11 @@ div {
   left: 55%;
   top: 320px;
   margin: 0 auto; /* centers the noticeboard horizontally */  
-  background-color: #ff7b00;
+  background-color: TRANSPARENT;
+  background-image: url("Posterbg.png");
+   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   border: 2px solid rgb(0, 0, 0);
   width: 240px;
   height: 360px;
@@ -224,7 +228,7 @@ also contains a Capybara */
   border: 0px transparent; 
   text-align: center;
   height: 300px;
-  width: 225px;
+  width: 1000px;
   padding: 0px;
   margin: 10px;
 }
@@ -242,6 +246,15 @@ also contains a Capybara */
   width: 1135px;
   height: 100px;
   /* //text-align: end; centers the text within the child div */
+}
+
+img.pixel-art {
+  /* Core modern standard */
+  image-rendering: pixelated;
+  
+  /* Fallbacks for older browser versions */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 main {
