@@ -21,7 +21,7 @@ For example i choose how i want it displayed div, what i want in it the content 
     </head>
 
     <!-- Where all the content of the website is stored -->
-    <body>
+    <body id="body">
        <!-- Heading -->
         <div class="noticeboardheadingbox">
             <h1 class="myheadingfont">Wellington Youth Tech Noticeboard</h1>
@@ -67,8 +67,36 @@ For example i choose how i want it displayed div, what i want in it the content 
 
         <!-- Capybara image also prevents bug -->
         <div class="transparentbox">    
-            <img class="childofposterbox" src="Capybara.png" alt="my capybara">
+            <img src="Capybara.png" alt="my capybara">
+            <div class="childoftransparentbox">
+                
+            </div>
         </div>
-       
+
+        <!-- <div class="content">
+    content
+
+    </div> -->
+ 
+  <!-- <footer class="footer"></footer> -->
+        <script>
+           // 1. Select the HTML element
+        const element = document.getElementById('body');
+
+        // 2. Get all computed CSS styles for the element
+        const styles = window.getComputedStyle(element);
+
+        // 3. Extract the specific CSS property value
+        const stylesbottom = styles.getPropertyValue('background-position'); // For background color, use 'backgroundColor' instead of 'bottom'
+        const widthValue = stylesbottom.width;
+        const heightValue = stylesbottom.height;
+        // const widthValue = styles.width;
+
+        // 4. Print the values to the developer console
+        // console.log("bottom co-ords ", bgColors); // Outputs: rgb(173, 216, 230)
+        console.log("Element Width:", stylesbottom);   // Outputs: 200px
+        console.log("Element Height:", heightValue);  // Outputs: 100px
+        </script>
+
     </body>
 </html>

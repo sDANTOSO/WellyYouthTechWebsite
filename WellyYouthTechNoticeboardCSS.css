@@ -4,13 +4,23 @@
 <!-- This holds how the website should be displayed, like fonts, sizes, colours, and positions  */ 
 
 
+
 /* always put background in a body class */
 body {
+  height: 100%;
   background-image: url("Noticeboard-topbar.png"),url("Noticeboard-Bottom.png"),url("Noticeboard-middle.png");
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-repeat: no-repeat, no-repeat, repeat-y;
   background-size: cover, cover, cover;  
-  background-position: center top, left 0% bottom 2370% ,center;
+  background-position: center top,50% -2470%, center;
+  min-height: 0vh, 100vh, 0vh;
+    /* display: flex;
+      flex-direction: column;
+      height: 100%; Takes up full viewport height */
+    /* min-height: 100vh; Takes up full viewport height */
+    /* margin: 0; */
+    /* console.log({bottom}) */
 }
+
 
 /* FONTS */
 
@@ -59,6 +69,10 @@ p {
 
 /* if you want to add another type of font just do .____font i think */
 
+
+.content {
+  flex: 1 0 auto;
+}
 /* CONTAINERS */
 
 /* this is the box that will be applied before every box*/
@@ -72,6 +86,7 @@ div {
   /* the margin is the gap between the border and the site walls */
   /* it goes content->padding->border->margin */
   justify-content: start; /* this is the alignment of the text/image inside the box (so start places it at the start of the box) */
+  
 }
 
 /* this is the box which allows the other boxes to be placed anywhere as they now have a reference to a set position here*/
@@ -212,6 +227,40 @@ also contains a Capybara */
   width: 225px;
   padding: 0px;
   margin: 10px;
+}
+
+.childoftransparentbox {
+  
+   position: relative; 
+   left: -42%;
+   border: 0px transparent;
+   background-color: TRANSPARENT;
+    background-image: url("Noticeboard-Bottom.png");
+   background-repeat: no-repeat;
+  background-position:center top;
+  background-size: cover;
+  width: 1135px;
+  height: 100px;
+  /* //text-align: end; centers the text within the child div */
+}
+
+main {
+    flex: 2; /* Automatically expands to fill empty space, pushing footer down */
+}
+
+footer {
+    /* position: sticky;
+   left: 0;
+   bottom: 0; */
+   /* flex-shrink: 0; Prevents footer from shrinking */
+   /* margin-top: auto; */
+   /* width: 100%; */
+  background-image: url("Noticeboard-Bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+   /* color: white; */
+   text-align: center;
 }
 
 /* LINK STYLES */
